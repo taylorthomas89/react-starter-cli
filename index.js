@@ -1,13 +1,12 @@
 const figlet            = require('figlet');
 const chalk             = require('chalk');
 const clear             = require('clear');
-const fs                = require('fs');
 
-const files             = require('./lib/files');
 const github            = require('./lib/github');
 const { url }           = require('./config/repo-config');
 
 clear();
+
 console.log('');
 console.log (
     chalk.yellow (
@@ -16,9 +15,13 @@ console.log (
 
 
 const run = async () => {
-    const done = await github.cloneRepo(url);
-    if (done) { 
-        console.log(chalk.green('Done!'));
+    const cloneDone = await github.cloneRepo(url);
+    const removeGitDone = await github.removeGit();
+    
+    if (cloneDone && removeGitDone) { 
+        console.log(chalk.green('Done!'));    
+    } else {
+        console.log(chalk.red('Oops! Something went wrong..'));
     }
 
 }
