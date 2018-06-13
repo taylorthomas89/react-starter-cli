@@ -21,9 +21,10 @@ const run = async () => {
     if (cloneDone && removeGitDone) { 
         console.log(chalk.green('Done!'));    
     } else {
-        console.log(chalk.red('Oops! Something went wrong..'));
+        console.log(chalk.red('\nOops! Something went wrong..'));
+        console.log(cloneDone + '\n');
+        
     }
-
 }
 
 run();
