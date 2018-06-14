@@ -5,6 +5,7 @@ const clear             = require('clear');
 const { url }           = require('./config/repo-config');
 const github            = require('./lib/github');
 const files             = require('./lib/files');
+const inquierer         = require('./lib/inquirer');
 
 clear();
 
@@ -19,8 +20,12 @@ const run = async () => {
     const removeGitDone = await github.removeGit();
     
     if (cloneDone && removeGitDone) { 
-        console.log(chalk.green('Done! \n'));    
-        // prompt for folder rename, 
+        const folderName = await inquierer.askFolderName();
+        if (folderName) {
+            files.renameFolder(folderName);
+            console.log(chalk.green('\n Success! \n')); 
+        }
+
     } else {
         console.log(chalk.red('\nOops! Something went wrong..'));
         console.log(cloneDone + '\n');
