@@ -4,12 +4,15 @@
   "main": "index.js",
   "author": "taylor thomas<taylor.thomas@redwoodcodingacademy.com>",
   "license": "MIT",
+  "preferGlobal": true,
+  "bin": "./index.js",
   "dependencies": {
     "chalk": "^2.4.1",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
     "figlet": "^1.2.0",
     "fs-extra": "^6.0.1",
+    "global": "^4.3.2",
     "inquirer": "^6.0.0",
     "simple-git": "^1.95.1"
   }
