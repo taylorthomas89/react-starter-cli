@@ -2,7 +2,7 @@
   "name": "redwood-react-starter",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "taylor thomas<taylor.thomas@redwoodcodingacademy.com>",
+  "author": "Taylor Thomas<taylor.thomas@redwoodcodingacademy.com>",
   "license": "MIT",
   "preferGlobal": true,
   "bin": "./index.js",
