@@ -1,8 +1,8 @@
 {
-  "name": "redwood-react-starter",
+  "name": "rca-react-starter",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Taylor Thomas<taylor.thomas@redwoodcodingacademy.com>",
+  "author": "Taylor Thomas<taylor.thomas@redwoodcodeacademy.com>",
   "license": "MIT",
   "preferGlobal": true,
   "bin": "./index.js",
