@@ -24,6 +24,7 @@ const run = async () => {
         const folderName = await inquierer.askFolderName(); // asks user for input to rename react-starter folder
         if (folderName) {
             await files.renameFolder(folderName); // renames react-starter folder to what the user inputs. input must be longer than 3 characters
+            messages.printRCA();
             messages.printSuccessInstructions(folderName.foldername); // prints instructions to user (cd into folder, install packages, npm run start)
         }
     } else {
