@@ -5,7 +5,7 @@
 ### What is this?
 ##### A CLI to generate a basic React boilerplate.
 
-RCA React Starter is a simlpe, lightweight CLI to initiate a new React app. Your app will be wired up and contain a Hello World message. 
+RCA React Starter is a simple, lightweight CLI to initiate a new React app. Your app will be wired up and contain a Hello World message. 
 
 ## Installation
 
