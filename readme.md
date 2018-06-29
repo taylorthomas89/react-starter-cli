@@ -31,7 +31,7 @@ This `-g` flag will install the CLI to your computer globablly, so you can use i
 
 ### What does the generated file system look like?
 
-![alt text](/Users/TaylorThomas/Desktop/output2.png "demo gif")
+![alt text](https://i.imgur.com/Q3kHlCx.png "demo gif")
 
 ## Requirements
 
