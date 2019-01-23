@@ -1,6 +1,6 @@
 {
   "name": "rca-react-starter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "RCA React Starter is a simple CLI to initiate a new React app.",
   "main": "index.js",
   "author": "Taylor Thomas<taylor.thomas@redwoodcodeacademy.com>",
